@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("./images/cancun.jpeg");
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 900px;
+  text-align: center;
+  width: 95%;
+  height: auto;
+  color: #fff;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(25px);
+}
+
+.countdown > div {
+  width: 100%;
+}
+
+.countdown h2 {
+  font-size: 7rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.countdown p, .countdown h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.countdown h3 {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .countdown {
+    max-height: 300px;
+    height: 100%;
+  }
+
+  .countdown > div {
+    width: auto;
+  }
+
+  .countdown h3 {
+    display: flex;
+  }
+}
