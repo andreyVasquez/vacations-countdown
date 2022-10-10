@@ -4,7 +4,7 @@ const minutesHtml = document.getElementById("minutes");
 const secondsHtml = document.getElementById("seconds");
 
 const countdown = () => {
-  const countDownDate = new Date(`Oct 4, 2022 7:00:00`).getTime();
+  const countDownDate = new Date(`Jan 23, 2023 7:00:00`).getTime();
 
   const interval = setInterval(function () {
     const now = new Date().getTime();
